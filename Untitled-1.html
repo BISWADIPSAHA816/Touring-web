@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="logo/favicon1.png" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="passport2.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-select-country.min.css"> -->
+
+</head>
+
+<body class="bg-img">
+
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>info. corner </h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>renew passport</a></li>
+                <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
+                <li><a href="#"><i class="fas fa-location">relocation</i></a></li>
+                <li><a href="#"><i class="fas fa-calculator"></i>fee calculator</a></li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
+                <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li>
+            </ul>
+            <div class="social_media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="registration-form">
+            <form class="A1">
+                <div class="registration-logo with-border">
+                    <h1><b>User Registration</b></h1>
+                </div>
+
+                <!-- <div class="row">
+                    <label class="bittu"> </label>
+                    <div class="col-sm-12">
+                        <div>
+                            <input type="email" id="email" name="email" class="form-control-item" placeholder=" Email Id " required>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="field email-field">
+                    <div class="input-field">
+                        <input type="email" placeholder=" email*" class="email" />
+                    </div>
+                    <span class="error email-error">
+                      <i class="bx bx-error-circle error-icon"></i>
+                      <p class="error-text">Please enter a valid email</p>
+                    </span>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div>
+                            <input type="person" id="email" pattern="[A-Za-z]+ " name="name" class="form-control-item" placeholder="Enter First Name*" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="fname" name="fname" pattern="[A-Za-z]+ {10}" class="form-control-item" placeholder="Middle Name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="lname" name="lname" pattern="[A-Za-z]+ {10}" class="form-control-item" placeholder="Last name*" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" id="country" name="country" class="form-control-item" placeholder="Address*" required> </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="number" id="pin" name="code" pattern="+ {6}" class="form-control-item" placeholder="pincode*" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="pin" name="code" pattern="[A-Za-z]+" class="form-control-item" placeholder="state*" required>
+                            <!-- <label for="state">State:</label>
+                            <select id="state" name="state" required>
+                                  <option value="0">State:</option>
+                                  <option value="1">Andhra Pradesh</option>
+                                  <option value="2">Tamil Nadu</option>
+                                  <option value="3">Gujrat</option>
+                                  <option value="4">Karnataka</option>
+                                  <option value="5">Rajasthan</option>
+                                  <option value="6">Bihar</option>
+                                  <option value="7">Uttar Pradesh</option>
+                                  <option value="8">kerala</option>
+                                  <option value="9">Haryana</option>
+                                  <option value="10">odisha</option>
+                                  <option value="11">Jharkhand</option>
+                                  <option value="12">Himachal Pradesh</option>
+                                  <option value="13">Arunachal Pradesh</option>
+                                  <option value="14">West Bengal</option>
+                                  <option value="15">Sikkim</option>
+                                  <option value="16">Nagaland</option>
+                                  <option value="17">Mizoram</option>
+                                  <option value="18">Meghalaya</option>
+                                  <option value="19">Telangana</option>
+                                  <option value="20">Uttarakhand</option>
+                                  <option value="21">Madhya Pradesh</option>
+                                  <option value="22">Maharashtra</option>
+                                  <option value="23">Punjab</option>
+                                  <option value="24">Assam</option>
+                                  
+                                </select> -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="country" name="country" pattern="[A-Za-z]{12}+" class="form-control-item" placeholder="City*" required>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]+ {3}-[0-9]+ {2}-[0-9]+ {3}" class="form-control-item" placeholder="phone no.*" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <span><div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="city" name="city" class="form-control item" placeholder="City" required>
+                        </div>
+                    </div></span> -->
+                <!-- <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="city" name="city" class="form-control item" placeholder="pincode" required>
+                            </div>
+                        </div></span>
+
+ -->
+                <!-- 
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" id="npass" name="npass" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" class="form-control-item" placeholder="Password" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" id="cpass" name="cpass" class="form-control-item" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="field create-password">
+                            <div class="input-field">
+                                <input type="password" placeholder="Create password*" class="password" />
+                                <i class="bx bx-hide show-hide"></i>
+                            </div>
+                            <span class="error password-error">
+                      <i class="bx bx-error-circle error-icon"></i>
+                      <p class="error-text">
+                        Please enter atleast 8 charatcer with number, symbol, small and
+                        capital letter.
+                      </p>
+                    </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="field confirm-password">
+                            <div class="input-field">
+                                <input type="password" placeholder="Confirm password*" class="cPassword" />
+                                <i class="bx bx-hide show-hide"></i>
+                            </div>
+                            <span class="error cPassword-error">
+                      <i class="bx bx-error-circle error-icon"></i>
+                      <p class="error-text">Password don't match</p>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- <div class="input-field button">
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div> -->
+
+                <div class="input-field button">
+                    <div class="col-md-12">
+                        <button type="submit" name="submit" value="Submit" class="btn btn-block login-button">Register</button>
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                        <a href="#" class="text-center">
+                            <h4 id="A3"><b>I already have a Register</b></h4>
+                        </a>
+                    </div> -->
+            </form>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <!-- <script type="text/javascript"> -->
+
+
+        <script src="passport2.js"></script>
+
+</body>
+
+</html>

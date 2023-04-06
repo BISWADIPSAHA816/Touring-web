@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fill details 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="renew2.css">
+
+</head>
+
+<body>
+    <div>
+        <input type="checkbox" id="check">
+        <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+        <div class="sidebar">
+            <header>My App</header>
+            <ul>
+                <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+                <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+                <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+                <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+                <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- <section></section> -->
+    </div>
+    <div class="main">
+        <div class="register">
+            <h2>Fill Details</h2>
+        </div>
+        <form action="action.php">
+
+            <div class="form-container">
+                <label class="momo">Apply for ?</label>
+                <br><br>
+                <input type="radio" name="office" id="fresh1"> Fresh Passport
+                <input type="radio" name="office" id="fresh1"> Re-issue of passport
+                <br><br>
+                <div class="col-md-6" for="name">
+                    <div class="form-group">
+                        <input type="text" id="fname" pattern="[A-Za-z]+ {12}" name="fname" class="form-control item" placeholder="Father's name" required>
+                    </div>
+                </div>
+                <div class="col-md-6" for="name">
+                    <div class="form-group">
+                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]+ {12}" class="form-control item" placeholder="Mother's name" required>
+                    </div>
+                </div>
+
+                <br>
+                <label>either of your parents do govt. job?</label>
+                <br>
+                <div>
+
+                    <!-- <input type="radio" name="office"> yes
+                    <input type="radio" name="office"> No -->
+                    <label class="momo">is your birth place out of India?</label>
+                    <input type="radio" name="place" id="place1"> &nbsp;
+                    <span id="male">Yes</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="place" id="place1"> &nbsp;
+                    <span id="male">No</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+
+                <br>
+
+                <div>
+                    <label class="momo">Number of Pages?</label>
+                    <br>
+
+                    <input type="radio" name="place2" id="place2"> &nbsp;
+                    <span id="male">60</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="place2" id="place2"> &nbsp;
+                    <span id="male">35</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <br>
+
+
+                <!-- <input type="radio" name="office"> 35
+                <input type="radio" name="office"> 60 -->
+                <!-- </div> -->
+                <br><br>
+
+
+
+                <br><br>
+                <p>
+                    <h5>1)Provide the following details if there are any criminal proceedings pending against the applications. </h5>
+                </p>
+                <div>
+                    <label class="momo">Are any proceeding in respect of an offence alleged to have been committed by you pending before a criminal court in India?</label>
+                    <input type="radio" value="yes" name="office3" id="office3"> Yes
+                    <input type="radio" value="No" name="office3" id="office3"> No
+                </div>
+                <br><br>
+                <div>
+                    <label class="momo">Any kind of warrant  ?</label>
+                    <input type="radio" value="Yes" name="office4" id="office4"> yes
+                    <input type="radio" value="no" name="office4" id="office4"> no
+                </div>
+
+                <br><br>
+                <div>
+                    <label class="momo">Any pending police case ?</label>
+                    <input type="radio" name="office5" id="office5"> yes
+                    <input type="radio" name="office5" id="office5"> no
+                </div>
+                <br><br>
+                <p>
+                    <h5>2)Provide the following details if the applicants has been convicted by a court in India. </h5>
+                </p>
+                <div>
+                    <label class="momo">Have you at ,any time during the period of five years immediately preceding the date of this application been convicated by a court in India for offence involving moral turpitude and sentenced in respect thereof to imprisonment for not
+                    less than two years?</label>
+                    <input type="radio" name="office6" id="office6"> Yes
+                    <input type="radio" name="office6" id="office6"> No
+                </div>
+                <br><br>
+                <p>
+                    <h5>3)Provide the following details if the applicant has been refused/denied</h5>
+                </p>
+                <div>
+                    <label class="momo">
+                        Have you ever been refused /denied passport?
+                    </label>
+                    <input type="radio" name="office7" id="office7"> Yes
+                    <input type="radio" name="office7" id="office7"> No
+                </div>
+                <br>
+                <div>
+                    <label class="momo">
+                            Has your passport  ever been revoked?
+                        </label>
+                    <input type="radio" name="office8" id="office8"> Yes
+                    <input type="radio" name="office8" id="office8"> No
+                </div>
+                <br>
+                <div>
+                    <label class="momo">
+                                Has your passport  ever been impounded?
+                            </label>
+                    <input type="radio" name="office9" id="office9"> Yes
+                    <input type="radio" name="office9" id="office9"> No
+                    <br></div>
+                <p>
+                    <h5>4 )Provide the following details if applicant has applied for or been granted foreign citizenship</h5>
+                </p>
+                <div>
+                    <label class="momo">
+                        Have you ever been granted citizenship by other countries?
+                    </label>
+                    <input type="radio" name="office10" id="office10"> Yes
+                    <input type="radio" name="office10" id="office10"> No
+                    <br></div>
+                <div>
+                    <label class="momo">
+                            Have you held the passport of any other country?
+                        </label>
+                    <input type="radio" name="office11" id="office11"> Yes
+                    <input type="radio" name="office11" id="office11"> No
+                </div>
+                <br>
+                <div> <label class="momo">
+                                have you ever surrendered your Indian Passport?
+                            </label>
+                    <input type="radio" name="office12" id="office12"> Yes
+                    <input type="radio" name="office12" id="office12"> No
+                </div>
+
+                <br><br>
+                <p>
+                    <h5>4)Provide following details if applicant has return to India on emergency certificate</h5>
+                </p>
+                <label class="momo">
+                        have you ever been returned India with an emergency certificate?
+                    </label>
+                <div> <input type="radio" name="place23" id="place23"> &nbsp;
+                    <span id="male5">Yes</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="place23" id="place23"> &nbsp;
+                    <span id="male5">No</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+
+
+
+
+
+
+                <button href="#" type="next" class="registerbutton">SUBMIT</button>
+
+
+
+                <!-- <p>Already have an account? <a href="#">Sign in</a>.</p> -->
+
+        </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
